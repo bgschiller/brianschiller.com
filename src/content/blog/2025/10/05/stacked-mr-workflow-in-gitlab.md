@@ -16,7 +16,7 @@ However, there are some difficulties:
 
 There's more information on what makes stacked diffs valuable from [Pragmatic Engineer](https://newsletter.pragmaticengineer.com/p/stacked-diffs) and [stacking.dev](https://www.stacking.dev/). TK more resources. I want to focus two things:
 
-1. A glossary (TK do we like "gloassary"?) of tools I tried, and why they didn't work for me.
+1. A glossary (TK do we like "glossary"?) of tools I tried, and why they didn't work for me.
 2. Details on the workflow I've landed on (at least for now).
 
 # 1. The tools
@@ -34,23 +34,30 @@ Most of my coding at Grammarly happens on our private Gitlab instance. There are
 
 I really wanted this to work, but it seems to be in permanent experimental state. It includes several bugs and doesn't match my mental state very well: it's required to "create a stack" to hold the branches; I'd rather this was implicit. Some bugs I encountered:
 
-TK grab from https://gitlab.com/gitlab-org/cli/-/issues/7473#note_2651933041
+- `glab stack reorder` doesn't work with terminal editors. It tries to draw a loading screen while the editor is also open: https://asciinema.org/a/k359nhikZAljIWJMhnSVTiec1 . I worked around this by running `EDITOR='code --wait' glab stack reorder`
+- `reorder` doesn't expect commits with multiple lines. All titles and bodies of the commits in the stack appear in the editor at once, but then `glab` rejects the changes unless you delete the bodies.
+- `reorder` just doesn't seem to work at all, even after correcting for the above.
+- Upon creating the MRs, the commit title and description were both smooshed into the MR title (just a really long title).
+
+Other people found many other issues, listed on https://gitlab.com/gitlab-org/cli/-/issues/7473#note_2651933041. For example,
+
+> When I run `glab stack amend` with different commit message, then `glab stack sync`, the MR's title is not updated.
 
 ## jujutsu
 
-I so wanted to like jujutsu. Many engineers I look up to (Steve Klabnik, The "Defunctionalize the continuation" guy, TK others) have written about how much they like it. I failed to give it a good try because it doesn't work in repos that include files tracked by git LFS. There's an open issue for that bug (TK link), so hopefully I can give it another try someday. Or, my work might shift to a repo that doesn't include LFS.
+Many engineers I look up to ([Steve Klabnik](https://steveklabnik.com/writing/i-see-a-future-in-jj/), [Jimmy Koppel](https://github.com/jkoppel/jj-workshop), [Chris Krycho](https://v5.chriskrycho.com/essays/jj-init/)) have written about how much they like jujutsu. I failed to give it a good try because it doesn't work in repos that include files tracked by git LFS. There's an [open issue](https://github.com/jj-vcs/jj/issues/80) for that bug, so hopefully I can give it another try someday. Or, my work might shift to a repo that doesn't include LFS.
 
 I was also uncomfortable with the all-or-nothing approach: it didn't seem like I can mix `jj` and `git` commands without care.
 
 ## `git branchless`, what I landed with
 
-Similar to jujutsu, `git branchless` maintains a database of changes and operation history that's separate from the `.git` directory. However, it still uses git commands, just introducing a handful of additional subcommands.
+Similar to jujutsu, `git branchless` maintains a database of changes and operation history that's separate from the `.git` directory. (I think the developer of `git branchless` also works on `jj`). However, it still uses git commands, just introducing a handful of additional subcommands.
 
 ## Tools I still need to research
 
 TK Other tools to cover:
 
-- git branchless has a list of similar projects
+- git branchless has a [list of similar projects](https://github.com/arxanas/git-branchless/wiki/Related-tools)
 - git town
 - Git Butler. Jason Sperske says this is the closest he's seen to his dream workflow.
 
