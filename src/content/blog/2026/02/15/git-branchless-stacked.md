@@ -297,8 +297,6 @@ $ git sl
 ◯ d4cd894 2d (adventure) find a strange ring in the dark
 ```
 
-![a diagram showing the results of a squash merge, where the commits from the first branch conflict with their own squashed selves](./stacked-mrs.excalidraw.svg)
-
 ### Add MR prerequisites
 
 When I have a stack of MRs my goal is to keep the diff for each one separate. In the situation from above, where the MRs are
