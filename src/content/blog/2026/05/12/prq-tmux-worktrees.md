@@ -74,7 +74,7 @@ Next, I have tmux configured to change the window-status-format according that s
 
 ![a screenshot of a tmux status bar with four windows. The first is active, named "brianschiller.com". The fourth window has inverted colors and is called "ariel"](./claude-attention.png)
 
-When I focus into that pane, the custom variable is zeroed out.
+When I focus into that pane, the custom variable is zeroed out. These are the lines in my tmux config that set up the status bar this way.
 
 ```sh
 set -g window-status-format "#{?@claude_attention,#[reverse],}#I:#W#{?window_flags,#{window_flags}, }#[default]"
