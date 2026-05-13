@@ -1,10 +1,9 @@
 ---
 title: "prq: A tool for recycling worktrees"
-date: 2026-05-01
+date: 2026-05-12
 description: prq is a PR queue with warm worktrees and tmux notifications
 category: blog
 tags: [git, tmux, engineering, vibe coding, ai]
-draft: true
 ---
 
 In the last year, there's been an explosion of tools to help you create worktrees. Coding agents have everyone context-switching more often, and worktrees let you run multiple coding agents simultaneously without their stepping on one another's toes. I tried a couple of them, but they didn't fit the way I wanted to work very well. Instead, I built (vibe-coded) something custom that I call `prq`.
