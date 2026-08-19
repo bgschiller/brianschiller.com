@@ -92,7 +92,7 @@ It depends on python3 and boto3. If you object to those dependencies you could p
 
 I set up a keyboard shortcut from the settings (I think this might be a gnome thing?). I don't know how to save this as a dotfile, but it's quick to set up. Here's how it looks
 
-![custom shortcut settings for clipbox-screenshot.sh]({{ site.url }}{{ site.baseurl }}/images/clipbox-screenshot-keyboard-shortcut.png)
+![custom shortcut settings for clipbox-screenshot.sh](./clipbox-screenshot-keyboard-shortcut.png)
 
 ## Extensions
 

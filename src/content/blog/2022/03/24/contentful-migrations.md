@@ -42,7 +42,7 @@ This works great when executed interactively. It shows you a neat preview of the
 
 In trying out Contentful migrations, I wanted to try a relatively simple change: add a new option to an existing dropdown list.
 
-![A dropdown labelled Game Type showing options of Casino, Other, Solitaire, Trick Taking, and Rummy]({{ site.url }}{{ site.baseurl }}/images/contentful-dropdown-options.png)
+![A dropdown labelled Game Type showing options of Casino, Other, Solitaire, Trick Taking, and Rummy](./contentful-dropdown-options.png)
 
 Unfortunately, there's no way to say "Add 'RPG' to the list of game types". Instead, you have to say "The list of game types should be 'Casino', 'Other', 'Solitaire', 'Trick Taking', and 'Rummy'", listing all allowable options. Imagine someone else working on a concurrent change to add "Tower Defense" to the list of game types. Whichever migration lands last will blow away the other person's changes.
 

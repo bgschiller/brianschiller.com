@@ -21,12 +21,12 @@ Where each tool keeps track of state:
 
 Keeping the state in files is simpler in a handful of ways:
 
-- The changelog only contains versions you care about and not prereleases, which clog up the Gitlab releases page in the project I work on. [In this screenshot of the gitlab release page]({{ site.url }}{{ site.baseurl }}/images/cheetah-releases-page.png), the blue are release notes I care about, and the purple are for prereleases. If you want to see the changelog for a prerelease version, it's available on that branch.
+- The changelog only contains versions you care about and not prereleases, which clog up the Gitlab releases page in the project I work on. [In this screenshot of the gitlab release page](./cheetah-releases-page.png), the blue are release notes I care about, and the purple are for prereleases. If you want to see the changelog for a prerelease version, it's available on that branch.
 - It's easy to edit a change description before release—it's just a file! For semantic-release, you'd have to rebase that commit, and every one after it. In a project with many contributors, that would be difficult to accomplish.
 - If you have multiple packages, each has its own version in a separate package.json file. With git tags, I'm not sure what the options are.
 - The version of an app using semantic-release is oddly difficult to access. In one of the projects that uses semantic-release, I need to expose the version at runtime. But package.json's version field just says `0.0.0`. I'm not sure how to solve it yet. The version is available only as a command line argument to the publish script, but the application has already been built by then. I may do something heinous like `for ff in $(ls dist/*.js)"; sed 's/PLS_PUT_THE_VERSION_HERE/g $ff | sponge $ff`. Similarly, the deploy happens in two steps: "publish", which makes a build available for QA, and "promote", which makes it available to customers. In order to know which version to promote, we have to save the version somewhere. If it were recorded in package.json, it would be easy to find. As it is, we have to be sure to save during "publish" so we can refer to it during "promote".
 
-![a code review comment complimenting Zach Hauser on coming up with a way to save the version between the "publish" and "promote" CI jobs. The code shows writing an environment variable to a file called applet_version.env.]({{ site.url }}{{ site.baseurl }}/images/semantic-release-save-version.png)
+![a code review comment complimenting Zach Hauser on coming up with a way to save the version between the "publish" and "promote" CI jobs. The code shows writing an environment variable to a file called applet_version.env.](./semantic-release-save-version.png)
 
 ## Enforcing usage -- semantic-release
 
