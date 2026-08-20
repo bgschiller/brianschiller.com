@@ -16,6 +16,6 @@ You've probably also found that it's frequently _wrong_ about the smoking gun&md
 
 ![Screenshot of a slack message. `There's the smoking gun - nx.json line 9:` but behold, it was not the smoking gun](./smoking-gun-slack-02.png)
 
-My guess for why this happens is that the LLM has ingested _tons_ of narratives. Built into the weights of the model, it has a belief about where the reveal ought to occur in a mystery. So when it's time for the reveal, it latches onto the next plausible clue and declares it "the smoking gun!".
+My guess for why this happens is that the LLM has ingested _tons_ of narratives: both blog posts about solving bugs and Agatha Christie novels. Built into the weights of the model, it has a belief about where the reveal ought to occur in a mystery. So when it's time for the reveal, it latches onto the next plausible clue and declares it "the smoking gun!".
 
 Putting this together helps my intuition about how LLMs work. They're extremely useful for debugging, but definitely get "impatient" when the debugging drags on.
