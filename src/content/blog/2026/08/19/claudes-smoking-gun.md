@@ -6,7 +6,7 @@ category: blog
 tags: [claude, ai]
 ---
 
-If you've worked with Claude Code or another AI agent to debug something, it's probably pointed out a "smoking gun" or two. In case you haven't, here are a couple from screenshots I found.
+If you've worked with Claude Code or another AI agent to debug something, it's probably pointed out a "smoking gun" or two. In case you haven't, here's an example screenshot I found.
 
 ![Screenshot of a terminal. Text says: Now I have the smoking gun. Look at: - t=53.476: render with morphing=false t=53.486: morph-effect fires, ref=true match=false - so the ref was correctly true from the open state. rAF is scheduled at this point.](./smoking-gun-01.png)
 
