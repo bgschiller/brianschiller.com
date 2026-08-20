@@ -12,7 +12,7 @@ If you've worked with Claude Code or another AI agent to debug something, it's p
 
 You've probably also found that it's frequently _wrong_ about the smoking gun&mdash;the "smoking gun" it identifies ends up not being a problem. Here are a couple more screenshots:
 
-![Screenshot of a slack message. `Now I have the smoking gun.` -> signal you're about to receive the half-bakedest idea you've heard in a long time](./smoking-gun-slack-01.png)
+![Screenshot of a slack message. `Now I have the smoking gun.` -> signal you're about to receive the halfest baked idea you've heard in a long time](./smoking-gun-slack-01.png)
 
 ![Screenshot of a slack message. `There's the smoking gun - nx.json line 9:` but behold, it was not the smoking gun](./smoking-gun-slack-02.png)
 
