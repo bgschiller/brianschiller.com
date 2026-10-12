@@ -14,6 +14,8 @@ I wrote gitlab-ci-linter at Superhuman (fka Grammarly) to debug problems like th
 npx gitlab-ci-linter .gitlab-ci.yml
 ```
 
+The code is up at [github.com/bgschiller/gitlab-ci-linter](https://github.com/bgschiller/gitlab-ci-linter).
+
 ## Flattening the config
 
 The package works by first flattening the yaml config according to GitLab's semantics, then applying a handful of heuristic rules to the flat config. To summarize and simplify the approach, here are the flattening steps:
