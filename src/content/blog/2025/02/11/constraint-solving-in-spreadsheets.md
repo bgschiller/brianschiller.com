@@ -16,8 +16,8 @@ I found a couple of examples of people applying constraint optimization to every
 
 I've written about a couple of others:
 
-- [Scheduling conference talks to avoid conflicts](../../../2024/11/07/scheduling-conference-talks-lp.md)
-- [Scheduling medical rotations in a residency](../../../2019/01/26/residency-scheduling.md)
+- [Scheduling conference talks to avoid conflicts](/blog/2024/11/07/scheduling-conference-talks-lp/)
+- [Scheduling medical rotations in a residency](/blog/2019/01/26/residency-scheduling/)
 
 How would a non-programmer approach these problems? Imagine you're making a shift schedule for a local cafe. It seems unlikely that you would reach for a constraint solver. You're probably going to work it out by hand, or use Excel (but only as a grid—not for computation).
 
@@ -196,7 +196,7 @@ Spreadsheets are the most powerful end-user programming tool in the world. Nearl
 
 Traditional software abstracts over the data, storing it separately in a file or database or API. Only the computation is described in the code. Spreadsheets, on the other hand, have the data and the computation in the same place. I suspect this is more intuitive for people, as they're familiar with the data—those are the names of people or rooms or shifts: something from the domain.
 
-Laying out the data also offers a tidy way to locate the rules. I'll show an example using the [conference talk scheduling problem](/blog/2024/11/07/scheduling-conference-talks-lp) I wrote about last week. Here's a portion of the "talks" table from that problem:
+Laying out the data also offers a tidy way to locate the rules. I'll show an example using the [conference talk scheduling problem](/blog/2024/11/07/scheduling-conference-talks-lp/) I wrote about last week. Here's a portion of the "talks" table from that problem:
 
 | Title                                                                            | Duration |
 | -------------------------------------------------------------------------------- | -------- |

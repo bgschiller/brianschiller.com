@@ -18,7 +18,7 @@ To prevent this, requests initiated from javascript (and a few other contexts) h
 
 ## What to do about it
 
-If you have control over the server where you're requesting resources, you can add the appropriate headers to opt-in to cross origin requests. For example, here are some instructions for a node express server (from [zigpoll.com](zigpoll.com/blog/cors-with-express-and-fetch))
+If you have control over the server where you're requesting resources, you can add the appropriate headers to opt-in to cross origin requests. For example, here are some instructions for a node express server (from [zigpoll.com](https://www.zigpoll.com/blog/cors-with-express-and-fetch))
 
 ```js
 app.use((req, res, next) => {

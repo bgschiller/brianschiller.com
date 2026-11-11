@@ -36,7 +36,7 @@ A common cause of pipelines hanging is when a job is `when: manual` but not `all
 
 ## Creating gitlab-ci-linter
 
-I started thinking about writing a tool like this about the time I wrote [this post on JS package development](https://brianschiller.com/blog/2024/04/29/js-package-dev.md). There were so many weird tricks and gotchas that I was keeping in my head and I just knew I would forget. When the LLM agents got good enough in late 2025, I threw some credits at the problem and this is what came out of it.
+I started thinking about writing a tool like this about the time I wrote [this post on JS package development](https://brianschiller.com/blog/2024/04/29/js-package-dev/). There were so many weird tricks and gotchas that I was keeping in my head and I just knew I would forget. When the LLM agents got good enough in late 2025, I threw some credits at the problem and this is what came out of it.
 
 Please take that as a warning: this is completely vibe-coded. I've reviewed the source in a few places, but mostly I've only checked the output against examples.
 

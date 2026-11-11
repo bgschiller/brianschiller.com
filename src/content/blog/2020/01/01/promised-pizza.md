@@ -48,7 +48,7 @@ Given these definitions, write a function to eat a pizza. If you'd like, use the
 
 ## Solutions
 
-I posed the question to the #help-typescript channel on the [Denver Devs slack group](denverdevs.org), and folks came up with a variety of solutions!
+I posed the question to the #help-typescript channel on the [Denver Devs slack group](https://denverdevs.org), and folks came up with a variety of solutions!
 
 Here's a good first stab at the problem.
 

@@ -4,7 +4,7 @@ title: "vue-await"
 repoURL: "https://github.com/bgschiller/vue-await"
 ---
 
-Render blocks based on the status of a Promise. Demo at [brianschiller.com/vue-await/](https://brianschiller.com/vue-await/).
+Render blocks based on the status of a Promise. Demo at [bgschiller.github.io/vue-await/](https://bgschiller.github.io/vue-await/).
 
 ```vue
 <template>

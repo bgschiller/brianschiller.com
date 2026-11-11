@@ -425,10 +425,10 @@ or like this (depending on choice of pivot)
 
 ### Do it Yourself
 
-Please feel free to follow this method to make the best possible schedule for your own residency program! The code is available at [github.com/bgschiller/pgy2-schedule](https://github.com/bgschiller/pgy2-schedule), and I'm happy to answer questions or give advice by email: `brian (a) brianschiller.com` (or use the [contact form](https://brianschiller.com/blog/contact/)).
+Please feel free to follow this method to make the best possible schedule for your own residency program! The code is available at [github.com/bgschiller/pgy2-schedule](https://github.com/bgschiller/pgy2-schedule), and I'm happy to answer questions or give advice by email: `brian (a) brianschiller.com`.
 
 Please let me know how it goes! I'm especially interested if you come across some constraints or goals that are difficult to phrase using this model.
 
 ### Hire me to do it
 
-I'm hoping to eventually turn this into a self-service app, but have decided I don't know enough about the problem yet. A great way to learn is to work on more examples! If you'd like to have me make an optimal schedule for your residency program, send me an email at `brian (a) (brianschiller.com)` or use the [contact form](https://brianschiller.com/blog/contact/) on this website.
+I'm hoping to eventually turn this into a self-service app, but have decided I don't know enough about the problem yet. A great way to learn is to work on more examples! If you'd like to have me make an optimal schedule for your residency program, [send me an email](mailto:bgschiller@gmail.com).
